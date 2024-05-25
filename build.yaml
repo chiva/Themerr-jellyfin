@@ -12,5 +12,6 @@ owner: "LizardByte"
 artifacts:
   - "Jellyfin.Plugin.Themerr.dll"
   - "YoutubeExplode.dll"
+  - "YoutubeExplode.Converter.dll"
 version: "0.0.0.0"
 changelog: "see LizardByte/Themerr-jellyfin on GitHub"

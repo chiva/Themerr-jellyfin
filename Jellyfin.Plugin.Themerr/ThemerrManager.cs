@@ -94,7 +94,9 @@ namespace Jellyfin.Plugin.Themerr
                         .GetWithHighestBitrate();
 
                     // Download the stream to a file
+                    _logger.LogInformation("Starting download {VideoUrl} to {Destination}", videoUrl, destination);
                     await youtube.Videos.Streams.DownloadAsync(streamInfo, destination);
+                    _logger.LogInformation("Created successfully: {Destination}", destination);
                 });
             }
             catch (Exception e)
